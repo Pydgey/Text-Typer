@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>TTG</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/libs/selectize.default.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="purple-text text-darken-4">
+
+    <div class="container">
+        
+        <h1 class="center">Text Typer Game</h1>
+
+        <h6 class="center subTitle blue-text text-darken-2">
+            Escreva a maior quantidade possivel 
+            de palavras antes do tempo acabar
+        </h6>
+
+        <div class="center">
+            <img src="img/spinner.gif" alt="Spinner" id="spinner"/>
+            <p id="erro">Ocorreu um erro, Por favor tente novamente.</p>
+        </div>
+        
+        <p class="frase center"></p>
+    
+        <ul class="informacoes center">
+            <li class="red-text text-darken-2">
+                <i class="small material-icons icones teal-text text-accent-2">assignment</i>
+                <span id="tFrase"></span> palavras
+            </li>
+            <li class="red-text text-darken-2">
+                <i class="small material-icons icones teal-text text-accent-2">alarm</i>
+                <span id="tempo"></span> segundos
+            </li>
+        </ul>
+    
+        <textarea class="cDigita" rows="8" cols="40"></textarea>
+       
+        <div id="buttons">
+            <a id="bReStart" class="btn-floating btn-large waves-effect purple darken-4">
+                <i class="material-icons teal-text text-accent-2">restore</i>
+            </a>
+            <a id="bPlacar" class="btn-floating btn-large waves-effect purple darken-4">
+                <i class="material-icons teal-text text-accent-2">insert_drive_file</i>
+            </a>
+            <a id="bFrase" class="btn-floating btn-large waves-effect purple darken-4">
+                <i class="material-icons teal-text text-accent-2">shuffle</i>
+            </a>
+            <a id="bSearch" class="btn-floating btn-large waves-effect purple darken-4">
+                <i class="material-icons teal-text text-accent-2">repeat_one</i>
+            </a>
+            <input type="number" id="searchId" min="0">
+
+            <div id="select">
+                <select id="Selec-usu">
+                    <option value="Jhonson">Jhonson</option>
+                </select>
+            </div>
+
+            <a id="bSync" class="btn-floating btn-large waves-effect purple darken-4">
+                <i class="material-icons teal-text text-accent-2">swap_vert</i>
+            </a>
+        </div>
+    
+        <ul class="center red-text text-darken-2">
+            <li><span id="cont-carac">0</span> caracteres</li>
+            <li><span id="cont-palav">0</span> palavras</li>
+        </ul>
+
+        <section class="placar">
+            
+            <h3 class="center">Placar</h3>
+           
+            <table class="centered bordered">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Nº Palavras</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+        </section>
+    
+    </div>   
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/placar.js"></script>
+    <script src="js/frase.js"></script>
+    
+</body>
+</html>

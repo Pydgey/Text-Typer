@@ -1,0 +1,52 @@
+body{
+    background-color: #c599ce;
+    overflow: scroll;
+}
+
+.frase{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.cDigita{
+    font-size: 20px;
+    border: 3px solid #4f1c47;
+}
+
+.desable{
+    background-color: #330522;
+    color: #c599ce;
+}
+
+.subTitle{font-weight: bold;}
+
+.icones{vertical-align: middle;}
+
+.error{border: 5px solid red;}
+
+.truer{border: 5px solid green;}
+
+.placar{display: none;}
+
+.red-text{font-weight: bold;}
+
+#erro{
+    color:gold;
+    font-weight: bold;
+    display: none;
+}
+
+#spinner{display: none;}
+
+#searchId{
+    width: 50px;
+    text-align: center;
+    border-bottom: 2px solid blueviolet;
+}
+
+#bSync{float: right;}
+
+#select{display: inline-block !important;}
+
+#selec-usu{display: block !important;}
